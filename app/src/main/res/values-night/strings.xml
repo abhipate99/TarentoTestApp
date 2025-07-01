@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tarento Test App</string>
+    <string name="upper_label">Upper Layout</string>
+    <string name="lower_label">Lower Layout</string>
+    <string name="circular_view_desc">Circular View</string>
+    <string name="circular_view_label">Click Me</string>
+</resources>

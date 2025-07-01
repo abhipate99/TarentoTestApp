@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.screens.home.HomeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/upper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:background="@color/upper_layout"
+        android:padding="4dp"
+        android:paddingBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/lower_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="0.7">
+
+        <TextView
+            android:id="@+id/upper_layout_label"
+            style="@style/TextAppearance.Custom.Body24"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/upper_label"
+            app:layout_wrapBehaviorInParent="horizontal_only" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/circular_view"
+        style="@style/TextAppearance.Custom.Body24"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/circular"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:text="@string/circular_view_label"
+        app:layout_constraintBottom_toTopOf="@id/lower_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/upper_layout"
+        app:tint="@color/semi_transparent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lower_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:background="@color/lower_layout"
+        android:padding="4dp"
+        android:paddingBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upper_layout"
+        app:layout_constraintVertical_weight="0.3">
+
+        <TextView
+            android:id="@+id/lower_layout_label"
+            style="@style/TextAppearance.Custom.Body24"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/lower_label"
+            app:layout_wrapBehaviorInParent="horizontal_only" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
